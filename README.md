@@ -9,3 +9,5 @@
 * 3- deletes an entire binary tree
 
 * 4- checks if node is a leaf
+
+* 5- checks if given node is a root
