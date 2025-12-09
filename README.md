@@ -15,3 +15,5 @@
 * 6- goes through a binary tree using pre-order traversal
 
 * 7- goes through a binary tree using in-order traversal
+
+* 8- goes through a binary tree using post-order traversal
