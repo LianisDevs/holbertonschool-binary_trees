@@ -7,3 +7,5 @@
 * 2- inserts node as the right child of another node
 
 * 3- deletes an entire binary tree
+
+* 4- checks if node is a leaf
