@@ -9,9 +9,20 @@ int recursive_solver(const binary_tree_t *tree);
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
+	int left, right;
+
 	if (tree == NULL)
 		return (0);
-	return (recursive_solver(tree));
+
+	/*returns the greatest height of tree->left*/
+	left = recursive_solver(tree->left);
+
+
+	/*returns the greatest height of tree->right*/
+	right = recursive_solver(tree->right);
+
+	/*to get the balance factor= left - right*/
+	return (left - right);
 }
 
 /**
@@ -33,6 +44,9 @@ int recursive_solver(const binary_tree_t *tree)
 	/*this counts the height of the right side*/
 	right = recursive_solver(tree->right);
 
-	/*returning left- right to give us the balance factor*/
-	return (left - right);
+	/*
+	 * using ternary operator to return the greater value
+	 * condition ? expression if true : expression if false
+	 */
+	return ((left > right) ? left + 1 : right + 1);
 }
