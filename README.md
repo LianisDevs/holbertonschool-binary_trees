@@ -29,3 +29,5 @@
 * 13- counts the nodes with at least 1 child in binary tree
 
 * 14- measures the balance factor of a binary tree
+
+* 15- checks if a bianry tree is full
