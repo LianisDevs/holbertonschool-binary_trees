@@ -33,3 +33,5 @@
 * 15- checks if a bianry tree is full
 
 * 16- checks if a binary tree is perfect
+
+* 17- finds the sibling of a node
