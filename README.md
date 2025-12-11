@@ -19,3 +19,5 @@
 * 8- goes through a binary tree using post-order traversal
 
 * 9- measures the height of a binary tree
+
+* 10- measures the depth of a node in a binary trree
