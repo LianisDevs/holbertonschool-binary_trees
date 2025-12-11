@@ -17,3 +17,5 @@
 * 7- goes through a binary tree using in-order traversal
 
 * 8- goes through a binary tree using post-order traversal
+
+* 9- measures the height of a binary tree
