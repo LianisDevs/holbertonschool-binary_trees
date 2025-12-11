@@ -27,3 +27,5 @@
 * 12- counts the leaves in a binary tree
 
 * 13- counts the nodes with at least 1 child in binary tree
+
+* 14- measures the balance factor of a binary tree
