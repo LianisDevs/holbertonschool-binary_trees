@@ -35,3 +35,5 @@
 * 16- checks if a binary tree is perfect
 
 * 17- finds the sibling of a node
+
+* 18- finds the uncle of a node
