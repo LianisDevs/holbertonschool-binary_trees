@@ -28,10 +28,10 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 		return (0);
 
 	/*if the tree isn't full return 1 it's false*/
-	if (recursive_is_full(tree) != 0)
-		return (0);
+	if (recursive_is_full(tree) == 0)
+		return (1);
 
-	return (1);
+	return (0);
 }
 
 /**
