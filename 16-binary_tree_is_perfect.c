@@ -16,15 +16,14 @@ int recursive_is_balance(const binary_tree_t *tree);
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	int left = 0, right = 0;
+	int balanced;
 
 	if (tree == 0)
 		return (0);
 
-	left = recursive_is_balance(tree->left);
-	right = recursive_is_balance(tree->right);
+	balanced = recursive_is_balance(tree);
 
-	if (left != right)
+	if (balanced == -1)
 		return (0);
 
 	/*if the tree isn't full return 1 it's false*/
@@ -61,17 +60,22 @@ int recursive_is_full(const binary_tree_t *tree)
 /**
  * recursive_is_balance - handles recurisve call to check if tree is balanced
  * @tree: pointer to the node to check in tree
- * Return: balance or 0
+ * Return: balance or -1 if unbalanced
  */
 int recursive_is_balance(const binary_tree_t *tree)
 {
 	int left, right;
 
 	if (tree == NULL)
-		return (-1);
+		return (0);
 
 	left = recursive_is_balance(tree->left);
+
 	right = recursive_is_balance(tree->right);
 
-	return ((left > right) ? left + 1 : right + 1);
+	if (left == right)
+		return (1 + left);
+	else
+		return (-1);
+
 }
