@@ -25,3 +25,5 @@
 * 11- measures the size of a bianry tree
 
 * 12- counts the leaves in a binary tree
+
+* 13- counts the nodes with at least 1 child in binary tree
