@@ -66,16 +66,23 @@ int recursive_is_balance(const binary_tree_t *tree)
 {
 	int left, right;
 
+	/*base case*/
 	if (tree == NULL)
 		return (0);
 
+	/*recursive call for left side*/
 	left = recursive_is_balance(tree->left);
 
+	/*recursive call for right side*/
 	right = recursive_is_balance(tree->right);
 
+	/*if left and right sides match then return 1 + the matching number*/
 	if (left == right)
 		return (1 + left);
+	/*
+	 * else return -1 this means -1 will continue to bubble up showing
+	 * that there was an unbalanced level
+	 */
 	else
 		return (-1);
-
 }
