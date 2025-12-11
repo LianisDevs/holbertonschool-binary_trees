@@ -31,3 +31,5 @@
 * 14- measures the balance factor of a binary tree
 
 * 15- checks if a bianry tree is full
+
+* 16- checks if a binary tree is perfect
