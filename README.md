@@ -20,4 +20,6 @@
 
 * 9- measures the height of a binary tree
 
-* 10- measures the depth of a node in a binary trree
+* 10- measures the depth of a node in a binary tree
+
+* 11- measures the size of a bianry tree
